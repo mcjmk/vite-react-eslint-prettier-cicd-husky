@@ -1,0 +1,21 @@
+# Environment variables
+.env.*.local
+.env
+
+# Mac specific files
+.DS_Store
+
+# Build and dist folders
+dist
+build
+
+node_modules/
+.DS_Store
+
+.npm
+logs
+*.log
+npm-debug.log*
+logs/app.log
+
+coverage
