@@ -7,7 +7,7 @@ const App = () => {
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ut dolorem suscipit mollitia
         voluptatum blanditiis, iure atque amet laborum eos cumque doloribus quos? Modi molestias
-        corporis, commodi amet eaque eum.
+        corporis, commodi amet eaque eum.{' '}
       </p>
     </div>
   )
