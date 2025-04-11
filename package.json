@@ -6,10 +6,10 @@
     "build": "vite build",
     "dev": "vite",
     "preview": "vite preview",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
-    "format": "prettier --check \"src/**/*.{html,css,js,jsx}\"",
-    "format:fix": "prettier --write \"src/**/*.{html,css,js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+    "format": "prettier --check \"src/**/*.{html,css,scss,json,md,js,jsx,ts,tsx}\"",
+    "format:fix": "prettier --write \"src/**/*.{html,css,scss,json,md,js,jsx,ts,tsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
@@ -36,9 +36,11 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
-
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{html,css,js,jsx}": "prettier --write"
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{html,json,css,scss,md}": "prettier --write"
   }
 }
