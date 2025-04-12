@@ -1,5 +1,4 @@
 import { createRoot } from 'react-dom/client'
-import { useEffect } from 'react'
 
 const App = () => {
   return (
